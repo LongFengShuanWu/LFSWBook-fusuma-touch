@@ -1,0 +1,62 @@
+#Code:UTF-8
+swipe:
+  4:
+    left:
+    command: 'xdotool key ctrl+alt+Right' #四指左滑切换下一个工作区
+    right:
+      command: 'xdotool key ctrl+alt+Left' #四指右滑切换上一个工作区
+    up:
+      command: 'xdotool key super+s' #四指上滑打开工作区预览
+    down:
+      command: 'xdotool key super' #四指下滑按super键
+  3: 
+    left:
+      command: 'xdotool key super+Left' #三指左滑窗口靠左
+    right:
+      command: 'xdotool key super+Right' #三指右滑窗口靠右
+    up:
+      command: 'xdotool key alt+tab' #三指上滑切换窗口
+    down:
+      command: 'xdotool key alt+shift+tab' #三指下滑返回窗口
+    
+
+pinch:
+  4: 
+    in:
+      command: 'xdotool key ctrl+super+d' #四指外扩切回桌面
+    out:
+      command: 'xdotool key super+a' #四指内捏打开程序坞
+  3:
+    in:
+      command: 'xdotool key super+f4' #三指外扩关闭窗口
+    out:
+      command: 'xdotool key super+h' #三指内捏最小化窗口
+  2:
+    in:
+      command: 'xdotool key super+Up' #双指内捏缩小窗口
+    out:
+      command: 'xdotool key super+Down' #双指外扩全屏窗口
+
+
+rotate:
+  4:
+  clockwise:
+  counterclockwise:
+  3:
+  clockwise:
+  counterclockwise:
+  2:
+  clockwise:
+  counterclockwise:
+
+
+hold:
+  
+threshold:
+  swipe: 0.3
+  pinch: 0.1
+  rotate: 0.2
+interval:
+  swipe: 
+  pinch: 
+  rotate:

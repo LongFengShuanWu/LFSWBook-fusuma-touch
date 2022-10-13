@@ -1,0 +1,62 @@
+#Code:UTF-8
+swipe: #滑动
+  4:
+    left:
+      sendkey: "LEFTCTRL+LEFTALT+RIGHT" #四指左滑切换下一个工作区
+    right:
+      sendkey: "LEFTCTRL+LEFTALT+LEFT" #四指右滑切换上一个工作区
+    up:
+      sendkey: "LEFTMETA+S" #四指上滑打开工作区预览
+    down:
+      sendkey: "LEFTMETA" #四指下滑按super键
+  3:
+    left:
+      sendkey: "LEFTMETA+LEFT" #三指左滑窗口靠左
+    right:
+      sendkey: "LEFTMETA+RIGHT" #三指右滑窗口靠右
+    up:
+      sendkey: "LEFTALT+TAB" #三指上滑切换窗口
+    down:
+      sendkey: "LEFTALT+LEFTSHIFT+TAB" #三指下滑返回窗口
+    
+    
+pinch: #捏合
+  4:
+    in:
+      sendkey: "LEFTCTRL+LEFTMETA+D" #四指外扩切回桌面
+    out:
+      sendkey: "LEFTMETA+A" #四指内捏打开程序坞
+  3:
+    in:
+      sendkey:  "LEFTALT+F4" #三指外扩关闭窗口
+    out:
+      sendkey: "LEFTMETA+H" #三指内捏最小化窗口
+  2:
+    in:
+      sendkey:  "LEFTMETA+UP" #双指内捏缩小窗口
+    out:
+      sendkey: "LEFTMETA+DOWN" #双指外扩全屏窗口
+
+
+#rotate: #旋转
+#  4:
+#  clockwise:
+# counterclockwise:
+#  3:
+#  clockwise:
+#  counterclockwise:
+#  2:
+#  clockwise:
+#  counterclockwise:
+
+
+#hold: #拿起 
+
+threshold: # 滑动/捏合/保持敏感
+  swipe: 0.3
+  pinch: 0.1
+  rotate: 0.2
+interval: #滑动/捏合/保持之间的延迟
+  swipe:
+  pinch:
+  rotate:
